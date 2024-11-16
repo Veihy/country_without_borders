@@ -1,0 +1,149 @@
+* {
+    font-family: "Inter", serif;
+}
+
+html, h1, h2, h3, h4, h5, h6 {
+    color: #5c5b5b !important;
+}
+
+body {
+    background: #e0e6e8 !important;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit !important;
+    font-size: 20px !important;
+}
+
+.rounded-image {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #5c5b5b;
+}
+
+/* Header and Footer */
+header {
+    background: #79c1d9 !important;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #e0e6e8;
+    padding: 10px 0;
+    color: #6c757d;
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+}
+
+/* Logo and Navigation */
+.logo-background {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo-background img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-item {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: #5c5b5b !important;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    color: #5c5b5b !important;
+}
+
+.nav-item i {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #5c5b5b !important;
+}
+
+/* Dropdown Menu */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #79c1d9 !important;
+    color: #5c5b5b !important;
+}
+
+.nav .nav-item {
+    margin: 0 1rem;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #e0e6e8 !important;
+    color: #5c5b5b !important;
+}
+
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+    background-color: #b0c5c9 !important;
+    color: #5c5b5b !important;
+}
+
+/* Custom Buttons */
+.custom-button,
+.like-button {
+    background-color: #5c5b5b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.custom-button:hover,
+.like-button:hover {
+    background-color: #4e4d4d;
+}
+
+/* Sections */
+.city-section {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city-section .col-md-6 {
+    flex: 1; /* Равномерное распределение пространства */
+    padding: 10px;
+    width: 100%; /* Убедимся, что элементы занимают всю доступную ширину */
+}
+
+/* Текстовые блоки */
+.city-section h3, .city-section p {
+    flex-grow: 1; /* Заставляем блоки текста занимать все доступное пространство */
+    margin: 0; /* Убираем отступы, чтобы текст был сжимаемым */
+}

@@ -1,0 +1,109 @@
+/* Основные стили страницы */
+body {
+    background-color: #e0e6e8; /* Фон всей страницы */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Контейнер для форм */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Лого */
+.logo-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-background img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Заголовок */
+h2 {
+    color: #6c757d;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Общие стили для инпутов */
+.input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Стили для кнопок */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #5a6268;
+}
+
+/* Сообщение об ошибке */
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Стили для форм */
+.form {
+    margin-bottom: 20px;
+}
+
+/* Стиль для кнопки "Зарегистрироваться" */
+.btn-register {
+    background-color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-register:hover {
+    background-color: #0056b3;
+}
+
+/* Центрирование кнопки "Зарегистрироваться" и надписи */
+.btn-register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}

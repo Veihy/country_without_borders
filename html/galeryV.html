@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Галерея Вологда</title>
+    <!-- Подключение файла стилей -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/191c96ceba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/circle.css">
+
+</head>
+<body>
+<header class="container-fluid text-center my-3">
+    <!-- Логотип -->
+    <div class="logo-background">
+        <img src="images/main/logocwb.png" alt="Страна без границ" width="450">
+    </div>
+
+    <!-- Меню -->
+    <nav class="mt-4">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <!-- Кнопка "Главная" перенаправляет на главную страницу -->
+                <a class="nav-link" href="index.html"> <!-- Здесь 'index.html' - это ваша главная страница -->
+                    <i class="fa-solid fa-house"></i>
+                    Главная
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="fa-solid fa-city"></i>
+                    Города
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="nizhny-novgorod.html">Нижний Новгород</a></li>
+                    <li><a class="dropdown-item" href="irkutsk.html">Иркутск</a></li>
+                    <li><a class="dropdown-item" href="yaroslavl.html">Ярославль</a></li>
+                    <li><a class="dropdown-item" href="perm.html">Пермь</a></li>
+                    <li><a class="dropdown-item" href="vologda.html">Вологда</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <!-- Кнопка "Галерея" перенаправляет на страницу галереи -->
+                <a class="nav-link" href="gallery.html">
+                    <i class="fa-solid fa-camera-retro"></i>
+                    Галерея
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="fa-solid fa-map"></i>
+                    Карты
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="nizhny-novgorod-map.html">Нижний Новгород</a></li>
+                    <li><a class="dropdown-item" href="irkutsk-map.html">Иркутск</a></li>
+                    <li><a class="dropdown-item" href="yaroslavl-map.html">Ярославль</a></li>
+                    <li><a class="dropdown-item" href="perm-map.html">Пермь</a></li>
+                    <li><a class="dropdown-item" href="vologda-map.html">Вологда</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+<br>
+<br>
+<div class="city-buttons text-center my-3">
+    <button class="city-button mx-2" onclick="window.location.href='galerynn.html'">Нижний Новгород</button>
+    <button class="city-button mx-2" onclick="window.location.href='galeryI.html'">Иркутск</button>
+    <button class="city-button mx-2" onclick="window.location.href='galeryYa.html'">Ярославль</button>
+    <button class="city-button mx-2" onclick="window.location.href='galeryP.html'">Пермь</button>
+    <button class="city-button mx-2" onclick="window.location.href='galeryV.html'">Вологда</button>
+</div>
+
+
+<!-- Подключение необходимых скриптов для Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+<div class="carousel-wrapper">
+    <button class="carousel-button prev" onclick="onPrev()" id="prevButton" aria-label="Предыдущее изображение">&#171;</button>
+    <button class="carousel-button next" onclick="onNext()" id="nextButton" aria-label="Следующее изображение">&#187;</button>
+
+    <div class="carousel">
+        <ul class="slides">
+            <li class="slide" data-active>
+                <img src="images/photo_v/1.jpg" alt="some photo #1" loading="lazy" onload="imageLoaded(this)"/>
+            </li>
+            <li class="slide">
+                <img src="images/photo_v/2.jpg" alt="some photo #2" loading="lazy" onload="imageLoaded(this)"/>
+            </li>
+            <li class="slide">
+                <img src="images/photo_v/3.jpg" alt="some photo #3" loading="lazy" onload="imageLoaded(this)"/>
+            </li>
+            <li class="slide">
+                <img src="images/photo_v/4.jpg" alt="some photo #4" loading="lazy" onload="imageLoaded(this)"/>
+            </li>
+            <li class="slide">
+                <img src="images/photo_v/5.jpg" alt="some photo #5" loading="lazy" onload="imageLoaded(this)"/>
+            </li>
+            <li class="slide">
+                <img src="images/photo_v/6.jpg" alt="some photo #6" loading="lazy" onload="imageLoaded(this)"/>
+            </li>
+            <li class="slide">
+                <img src="images/photo_v/7.jpg" alt="Nature Image #6" loading="lazy" onload="imageLoaded(this)"/>
+            </li>
+            <li class="slide">
+                <img src="images/photo_v/8.jpg" alt="Nature Image #6" loading="lazy" onload="imageLoaded(this)"/>
+            </li>
+            <li class="slide">
+                <img src="images/photo_v/9.jpg" alt="Nature Image #6" loading="lazy" onload="imageLoaded(this)"/>
+            </li>
+            <li class="slide">
+                <img src="images/photo_v/10.jpg" alt="Nature Image #6" loading="lazy" onload="imageLoaded(this)"/>
+            </li>
+        </ul>
+    </div>
+
+    <div class="carousel-indicators">
+        <span class="carousel-indicator active" onclick="goToSlide(0)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(1)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(2)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(3)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(4)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(5)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(6)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(7)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(8)"></span>
+        <span class="carousel-indicator" onclick="goToSlide(9)"></span>
+    </div>
+</div>
+
+<script>
+    let activeIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+    const indicators = document.querySelectorAll(".carousel-indicator");
+
+    const updateCarousel = (newIndex) => {
+        slides[activeIndex].removeAttribute("data-active");
+        indicators[activeIndex].classList.remove("active");
+
+        activeIndex = newIndex;
+
+        slides[activeIndex].setAttribute("data-active", "");
+        indicators[activeIndex].classList.add("active");
+
+        const slideWidth = slides[0].offsetWidth;
+        document.querySelector('.slides').style.transform = `translateX(-${activeIndex * slideWidth}px)`;
+        toggleButtons();
+    };
+
+    const handleImageChange = (offset) => {
+        let newIndex = activeIndex + offset;
+        if (newIndex < 0) newIndex = 0;
+        if (newIndex >= slides.length) newIndex = slides.length - 1;
+        updateCarousel(newIndex);
+    };
+
+    const goToSlide = (index) => updateCarousel(index);
+
+    const onNext = () => handleImageChange(1);
+    const onPrev = () => handleImageChange(-1);
+
+    const toggleButtons = () => {
+        document.getElementById("prevButton").style.display = activeIndex === 0 ? "none" : "block";
+        document.getElementById("nextButton").style.display = activeIndex === slides.length - 1 ? "none" : "block";
+    };
+
+    const imageLoaded = (img) => {
+        const slide = img.closest('.slide');
+        slide.style.opacity = 1; // Делаем слайд видимым после загрузки изображения
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+        toggleButtons();
+    });
+</script>
+
+<br>
+<br>
+<br>
+
+
+
+
+
+<!-- футер -->
+<iframe src="footer.html" style="width: 100%; height: 100px; border: none;"></iframe>
+</body>
+</html>

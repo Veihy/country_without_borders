@@ -1,0 +1,127 @@
+*{
+    font-family: "Inter", serif;
+
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #5c5b5b !important;
+}
+body{
+    background: #e0e6e8 !important;
+}
+a{
+    text-decoration: none;
+    color: inherit !important;
+    font-size: 20px !important;
+}
+.rounded-image {
+    border-radius: 15px;
+
+    header {
+        background: #79c1d9 !important;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #e0e6e8;
+        padding: 10px 0;
+        color: #6c757d;
+        margin-top: 50px; /* добавляем отступ, чтобы футер не прилипал к контенту */
+    }
+    .title{
+        text-align: center;
+    }
+
+}
+/* Убираем отступы и поля для html и body */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Устанавливаем высоту на 100% */
+    color: #5c5b5b;
+}
+
+/* Убираем отступы и границы у header */
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background: #79c1d9;
+}
+
+.logo-background {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Настройки для навигации */
+.nav-item {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px; /* Увеличенный отступ для зоны нажатия */
+    text-align: center;
+    border-radius: 5px; /* Закругленные углы */
+    transition: background-color 0.3s ease; /* Плавное изменение фона */
+    color: #5c5b5b !important; /* Устанавливаем цвет текста */
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important; /* Эффект наведения */
+    color: #5c5b5b !important; /* Цвет текста при наведении */
+}
+
+.nav-item i {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #5c5b5b !important; /* Устанавливаем цвет иконки */
+}
+
+/* Меню по наведению */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #79c1d9 !important;
+    color: #5c5b5b !important;
+}
+
+/* Увеличенное горизонтальное расстояние между пунктами меню */
+.nav .nav-item {
+    margin: 0 1rem; /* Увеличенное расстояние */
+}
+
+/* Фон выпадающего списка при наведении */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #e0e6e8 !important; /* Фон при наведении на элемент */
+    color: #5c5b5b !important; /* Цвет текста при наведении */
+}
+
+/* Стили для активного (выбранного) элемента */
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+    background-color: #b0c5c9 !important; /* Фон при клике (активный элемент) */
+    color: #5c5b5b !important; /* Цвет текста при клике */
+}
+iframe {
+    width: 100%;
+    height: auto;
+    border: none;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+iframe, .iframe-container {
+    box-sizing: border-box; /* Убедитесь, что размеры учитывают padding и border */
+}
